@@ -5,14 +5,9 @@ import (
 )
 
 func main () {
-	perm([]rune("abc"), func(a []rune) {
+	perm([]rune("abcd"), func(a []rune) {
 		fmt.Println(string(a))
 	},0)
-}
-
-// Perm calls f with each permutation of a.
-func Perm(a []rune, f func([]rune)) {
-	perm(a, f, 0)
 }
 
 // Permute the values at index i to len(a)-1.
@@ -28,3 +23,8 @@ func perm(a []rune, f func([]rune), i int) {
 		a[i], a[j] = a[j], a[i]
 	}
 }
+
+// Perm calls f with each permutation of a.
+// func Perm(a []rune, f func([]rune)) {
+// 	perm(a, f, 0)
+// }
