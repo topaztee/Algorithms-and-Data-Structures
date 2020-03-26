@@ -8,8 +8,8 @@ import (
 func WordCount(s string) map[string]int {
 	mapCount := make(map[string]int)
 	wordsArr := strings.Fields(s)
-	for v, i := range wordsArr {
-		mapCount[v]++
+	for _, i := range wordsArr {
+		mapCount[i]++
 	}
 	return mapCount
 }
