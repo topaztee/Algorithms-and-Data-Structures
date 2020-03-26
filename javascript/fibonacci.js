@@ -23,6 +23,7 @@ function fibLoop(n) {
 	return b;
 }
 
+
 // The loop starts with i=3, because the first and the second sequence values are hard-coded into variables a=1, b=1.
 
 // memoization
